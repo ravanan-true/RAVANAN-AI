@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAVANAN AI</title>
+    <link rel="icon" href="Img/Brand-icon.png">
+    <link  rel="stylesheet" href="Bootstrap/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="Bootstrap/js/bootstrap.min.js">
+    <link rel="stylesheet" href="CSS/chat.css">
+</head>
+<body>
+
+
+    <!-- =====================================================
+         MOBILE MENU - ADDED
+    ====================================================== -->
+
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+
+    <div class="mobile-menu" id="mobileMenu">
+
+        <div class="mobile-menu-header">
+
+            <div class="mobile-menu-brand">
+
+                <img src="Img/Brand-icon.png" alt="RAVANAN AI">
+
+                <div>
+                    <strong>RAVANAN AI</strong>
+                    <small>AI Assistant</small>
+                </div>
+
+            </div>
+
+            <button id="closeMobileMenu">
+                ×
+            </button>
+
+        </div>
+
+
+        <button class="mobile-menu-item" id="mobileNewChatBtn">
+            <span>＋</span>
+            New Chat
+        </button>
+
+
+        <a href="history.html" class="mobile-menu-item">
+            <span>💬</span>
+            Chat History
+        </a>
+
+
+        <a href="settings.html" class="mobile-menu-item">
+            <span>⚙️</span>
+            Settings
+        </a>
+
+
+        <button class="mobile-menu-item mobile-logout" id="mobileLogoutBtn">
+            <span>🚪</span>
+            Logout
+        </button>
+
+    </div>
+
+
+
+    <div class="chat-app">
+
+        <!-- ~~~~~~~~~~~~~~ SIDEBAR ~~~~~~~~~~~~~~ -->
+
+        <aside class="sidebar">
+
+            <!-- ~~~~~~~~~~~~~~ BRAND ~~~~~~~~~~~~~~ -->
+
+            <div class="sidebar-brand">
+
+                <div class="brand-logo">
+                    <img src="Img/Brand-icon.png" alt="RAVANAN AI">
+                </div>
+
+                <div>
+                    <h4>RAVANAN <span>AI</span></h4>
+                    <small>AI Assistant</small>
+                </div>
+
+            </div>
+
+
+            <!-- NEW CHAT -->
+
+            <button class="new-chat-btn" id="newChatBtn">
+                <span>＋</span> New Chat
+            </button>
+
+
+            <!-- ~~~~~~~~~~~~~~ CHAT HISTORY ~~~~~~~~~~~~~~ -->
+
+            <div id="chatHistoryList">
+            </div>
+
+            <a href="history.html" class="view-history-link">
+                View All History →
+            </a>
+
+
+            <!-- ~~~~~~~~~~~~~~ SIDEBAR BOTTOM ~~~~~~~~~~~~~~ -->
+
+            <div class="sidebar-bottom">
+
+                <a href="settings.html" class="sidebar-link">
+                    ⚙️ Settings
+                </a>
+
+                <button id="logoutBtn" class="sidebar-link logout-btn">
+                    🚪 Logout
+                </button>
+
+            </div>
+
+        </aside>
+
+
+        <!-- ~~~~~~~~~~~~~~ MAIN CHAT ~~~~~~~~~~~~~~ -->
+
+        <main class="chat-main">
+
+            <!-- ~~~~~~~~~~~~~~ TOP BAR ~~~~~~~~~~~~~~ -->
+
+            <header class="chat-header">
+
+
+                <!-- =================================================
+                     MOBILE MENU BUTTON - ADDED
+                ================================================== -->
+
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    ☰
+                </button>
+
+
+                <div>
+
+                    <h5>RAVANAN AI</h5>
+
+                    <div class="online-status">
+                        <span></span> Online
+                    </div>
+
+                </div>
+
+
+                <div class="user-area">
+
+                    <div class="user-avatar" id="userAvatar">
+                        R
+                    </div>
+
+                    <div class="user-info">
+
+                        <strong id="userName"> User </strong>
+                        <small id="userEmail"> user@email.com </small>
+
+                    </div>
+
+                </div>
+
+            </header>
+
+
+            <!-- ~~~~~~~~~~~~~~ CHAT CONTENT ~~~~~~~~~~~~~~ -->
+
+            <section class="chat-content">
+
+                <!-- ~~~~~~~~~~~~~~ WELCOME ~~~~~~~~~~~~~~ -->
+
+                <div class="chat-welcome" id="chatWelcome">
+
+                    <div class="welcome-icon">
+                        <!-- ✦ -->
+                        <img src="Img/Brand-icon.png" alt="RAVANAN AI">
+                    </div>
+
+                    <h1>
+                        Hello, <span id="welcomeName">there</span>!
+                    </h1>
+
+                    <p>
+                        What can I help you with today?
+                    </p>
+
+
+                    <!-- ~~~~~~~~~~~~~~ SUGGESTIONS ~~~~~~~~~~~~~~ -->
+
+                    <div class="suggestion-grid">
+
+                        <button class="suggestion-card">
+                            <span>💻</span>
+                            <strong>Help with coding</strong>
+                            <small>Explain or debug code</small>
+                        </button>
+
+                        <button class="suggestion-card">
+                            <span>📚</span>
+                            <strong>Learn something</strong>
+                            <small>Understand a new topic</small>
+                        </button>
+
+                        <button class="suggestion-card">
+                            <span>💡</span>
+                            <strong>Get ideas</strong>
+                            <small>Find creative solutions</small>
+                        </button>
+
+                        <button class="suggestion-card">
+                            <span>✍️</span>
+                            <strong>Write something</strong>
+                            <small>Create useful content</small>
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ~~~~~~~~~~~~~~ MESSAGES ~~~~~~~~~~~~~~ -->
+
+                <div class="messages-container" id="messagesContainer"></div>
+
+            </section>
+
+
+            <!-- ~~~~~~~~~~~~~~ INPUT AREA ~~~~~~~~~~~~~~ -->
+
+            <div class="chat-input-area">
+
+                <div class="chat-input-wrapper">
+
+                    <textarea
+                        id="messageInput"
+                        rows="1"
+                        placeholder="Ask RAVANAN AI anything... "
+                    ></textarea>
+
+                    <button id="sendBtn" class="send-btn">
+                        ➤
+                    </button>
+
+                </div>
+
+                <p class="input-note">
+                    RAVANAN AI can make mistakes. Check important information.
+                </p>
+
+            </div>
+
+        </main>
+
+    </div>
+
+
+    
+    <script src="JS/chat.js"></script>
+
+</body>
+</html>

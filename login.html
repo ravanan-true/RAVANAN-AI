@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | RAVANAN AI</title>
+    <link rel="icon" href="Img/Brand-icon.png">
+    <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Bootstrap/js/bootstrap.min.js">
+    <link rel="stylesheet" href="CSS/auth.css">
+</head>
+<body>
+
+    <div class="auth-page">
+
+        <!-- ~~~~~~~~~~~~~~ LEFT SIDE ~~~~~~~~~~~~~~ -->
+
+        <div class="auth-info">
+
+            <div class="brand">
+                <div class="brand-icon">
+                    <img src="Img/Brand-icon.png" alt="RAVANAN AI">
+                </div>
+
+                <h2>RAVANAN <span>AI</span></h2>
+            </div>
+
+            <h1>
+                Welcome<br>
+                <span>Back.</span>
+            </h1>
+
+            <p>
+                Continue your conversations, explore your chat history,
+                and get smarter with RAVANAN AI.
+            </p>
+
+            <div class="info-points">
+
+                <div>
+                    <span>✓</span> Smart AI conversations
+                </div>
+
+                <div>
+                    <span>✓</span> Save your chat history
+                </div>
+
+                <div>
+                    <span>✓</span> Simple and secure interface
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- ~~~~~~~~~~~~~~ RIGHT SIDE ~~~~~~~~~~~~~~ -->
+
+        <div class="auth-form-section">
+
+            <div class="auth-card">
+
+                <div class="mobile-brand">
+                    <h2>RAVANAN <span>AI</span></h2>
+                </div>
+
+                <h2>Login to your account</h2>
+
+                <p class="auth-subtitle">
+                    Welcome back! Please enter your details.
+                </p>
+
+
+                <!-- ~~~~~~~~~~~~~~ LOGIN FORM ~~~~~~~~~~~~~~ -->
+
+                <form id="loginForm">
+
+                    <div class="form-group">
+
+                        <label for="loginEmail">
+                            Email Address
+                        </label>
+
+                        <input type="email" id="loginEmail" class="form-control" placeholder="Enter your email" required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <div class="password-label">
+
+                            <label for="loginPassword">
+                                Password
+                            </label>
+
+                            <a href="#"> Forgot password? </a>
+
+                        </div>
+
+                        <input type="password" id="loginPassword" class="form-control" placeholder="Enter your password" required>
+
+                    </div>
+
+
+                    <div class="remember-me">
+
+                        <input type="checkbox" id="rememberMe">
+
+                        <label for="rememberMe">
+                            Remember me
+                        </label>
+
+                    </div>
+
+                    <button type="submit" class="auth-btn"> Login </button>
+
+                    <div id="loginMessage" class="login-message">
+                    </div>
+                </form>
+
+                <div class="divider">
+                    <span>OR</span>
+                </div>
+                <p class="register-text">
+                    Don't have an account?
+                    <a href="register.html"> Create an account </a>
+                </p>
+
+                <a href="index.html" class="back-home">  ← Back to Home </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    
+    <script src="JS/auth.js"></script>
+
+</body>
+</html>

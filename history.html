@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat History | RAVANAN AI</title>
+    <link rel="icon" href="Img/Brand-icon.png">
+    <link rel="stylesheet" href="CSS/history.css">
+    <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Bootstrap/js/bootstrap.min.js">
+</head>
+<body>
+
+    <div class="history-page">
+
+        <!-- ~~~~~~~~~~~~~~ HEADER ~~~~~~~~~~~~~~ -->
+
+        <header class="history-header">
+
+            <div class="history-brand">
+
+                <a href="chat.html">
+                    <img src="Img/Brand-icon.png" alt="RAVANAN AI">
+                </a>
+
+                <div>
+                    <h2>RAVANAN <span>AI</span></h2>
+                    <small>Chat History</small>
+                </div>
+
+            </div>
+
+
+            <a href="chat.html" class="back-chat">
+                ← Back to Chat
+            </a>
+
+        </header>
+
+
+        <!-- ~~~~~~~~~~~~~~ CONTENT ~~~~~~~~~~~~~~ -->
+
+        <main class="history-content">
+
+            <div class="history-title">
+
+                <div>
+
+                    <h1>Your Conversations</h1>
+
+                    <p>
+                        View your previous conversations with RAVANAN AI.
+                    </p>
+
+                </div>
+
+                <button id="clearHistoryBtn" class="clear-btn">
+                    Clear History
+                </button>
+
+            </div>
+
+
+            <!-- ~~~~~~~~~~~~~~ HISTORY LIST ~~~~~~~~~~~~~~ -->
+
+            <div id="historyList" class="history-list">
+
+            </div>
+
+
+            <!-- ~~~~~~~~~~~~~~ EMPTY STATE ~~~~~~~~~~~~~~ -->
+
+            <div id="emptyHistory" class="empty-history">
+
+                <div class="empty-icon"> 💬 </div>
+
+                <h3>No conversations yet</h3>
+
+                <p>
+                    Start chatting with RAVANAN AI
+                    and your conversations will appear here.
+                </p>
+
+                <a href="chat.html"> Start New Chat </a>
+
+            </div>
+
+        </main>
+
+    </div>
+
+
+
+    <script src="Bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="JS/history.js"></script>
+
+</body>
+</html>

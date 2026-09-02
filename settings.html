@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings | RAVANAN AI</title>
+    <link rel="icon" href="Img/Brand-icon.png">
+    <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Bootstrap/js/bootstrap.min.js">
+    <link rel="stylesheet" href="CSS/settings.css">
+</head>
+<body>
+
+    <div class="settings-page">
+
+        <!-- HEADER -->
+
+        <header class="settings-header">
+
+            <div class="settings-brand">
+
+                <img
+                    src="Img/Brand-icon.png"
+                    alt="RAVANAN AI">
+
+                <div>
+                    <h2>RAVANAN <span>AI</span></h2>
+                    <small>Settings</small>
+                </div>
+
+            </div>
+
+
+            <a href="chat.html" class="back-btn">
+                ← Back to Chat
+            </a>
+
+        </header>
+
+
+        <!-- MAIN -->
+
+        <main class="settings-container">
+
+            <h1>Settings</h1>
+
+            <p class="settings-subtitle">
+                Manage your RAVANAN AI account and preferences.
+            </p>
+
+
+            <!-- PROFILE -->
+
+            <section class="settings-card">
+
+                <div class="card-title">
+
+                    <h3>Profile</h3>
+                    <p> Your account information </p>
+
+                </div>
+
+
+                <div class="profile-section">
+
+                    <div class="profile-avatar" id="profileAvatar"> R </div>
+
+                    <div class="profile-details">
+
+                        <div class="input-group">
+
+                            <label>Name</label>
+                            <input type="text" id="profileName" readonly>
+
+                        </div>
+
+
+                        <div class="input-group">
+
+                            <label>Email</label>
+                            <input type="email" id="profileEmail" readonly>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- CHAT SETTINGS -->
+
+            <section class="settings-card">
+
+                <div class="card-title">
+
+                    <h3>Chat Preferences</h3>
+                    <p> Manage your chat experience </p>
+
+                </div>
+
+
+                <div class="setting-row">
+
+                    <div>
+
+                        <strong>Save Chat History</strong>
+                        <small> Save your conversations for later. </small>
+
+                    </div>
+
+
+                    <label class="switch">
+
+                        <input type="checkbox" id="historyToggle" checked>
+                        <span class="slider"></span>
+
+                    </label>
+
+                </div>
+
+            </section>
+
+
+            <!-- DANGER ZONE -->
+
+            <section class="settings-card danger-card">
+
+                <div class="card-title">
+
+                    <h3>Data Management</h3>
+                    <p> Manage your stored conversation data. </p>
+
+                </div>
+
+
+                <button id="clearHistoryBtn" class="danger-btn">
+                    🗑 Clear Chat History
+                </button>
+
+            </section>
+
+
+            <!-- LOGOUT -->
+
+            <section class="settings-card">
+
+                <button id="logoutBtn" class="logout-btn">
+                    🚪 Logout
+                </button>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    
+
+
+    <script src="js/settings.js"></script>
+
+</body>
+
+</html>
