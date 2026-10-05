@@ -459,6 +459,23 @@ function generateAIResponse(message) {
         They are best friends. 🫶♾️`;
     }
 
+    // Tamil 
+    if( text === "tamil" || text === "tamilselvan" || text === "tamil selvan"){
+        
+            return `🌟 **Tamilselvan is a really good and kind-hearted person.** ❤️
+
+    😊 He always tries to learn something new and improve himself every single day. 📚✨ He has a strong interest in learning and never stops exploring new things. 🔍🧠
+
+    💻 Whether it is technology, studies, or everyday life, he is always ready to learn, grow, and gain new knowledge. 🚀📖 He believes that **learning is a continuous journey** and there is always something new to discover. 🌱✨
+
+    🔥 His dedication, curiosity, positive mindset, and willingness to learn make him a truly special person. 💯👏
+
+    🌍 **He keeps learning every time, every place, and from every experience.** 💡📚 He doesn't give up easily and always tries to become a better version of himself. 💪😎
+    
+    ❤️ In short, **Tamilselvan is a good person, a continuous learner, and someone who is always growing, improving, and moving forward!** 🚀🌟😊
+    `;
+    }
+
 
     // About Creator
     if ( text === "who created you" || text === "who created this ai" || text === "who made you" || text === "who developed you" ||
